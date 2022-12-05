@@ -9,6 +9,7 @@
     --nav-border: 1px solid #ececec;
     --border-color-portfolio: #eeeeee;
     --border-partner-logo: #afb1b8;
+    --overlay-filter-img-hover: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -376,6 +377,35 @@ figure {
     border-right: 1px solid;
     border-left: 1px solid;
     border-color: var(--border-color-portfolio);
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.filter figure:hover .overlay {
+    transform: translatey(0);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-filter-img-hover);
+    transform: translatey(100%);
+    transition: transform 250ms ease;
+}
+
+.overlay p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    padding: 49px 45px 49px 24px;
 }
 
 .filter figure:hover {
