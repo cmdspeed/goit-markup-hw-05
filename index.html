@@ -47,13 +47,18 @@
         </ul>
     </header>
     <main>
+
+
         <!-- sekcja powitalna -->
         <section class="section welcome">
             <div class="container">
                 <h1 class="header-first">efektywne rozwiązania dla waszego biznesu</h1>
-                <button type="button" class="button-index">Zamów usługe</button>
+                <button type="button" class="button-index" data-modal-open>Zamów usługe</button>
+
             </div>
+
         </section>
+
         <!-- sekcja z lore ipsum -->
         <section class="section">
             <div class="container">
@@ -364,6 +369,12 @@
             </div>
         </div>
     </footer>
+    <!--  modalne okienko -->
+    <div data-modal class="bg-modal is-hidden">
+        <div class="modal">
+            <button data-modal-close>X</button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 
