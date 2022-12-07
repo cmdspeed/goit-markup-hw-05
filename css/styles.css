@@ -531,7 +531,7 @@ figure {
     content: '';
     position: relative;
     display: block;
-    top: 14px;
+    top: 16px;
     height: 4px;
     width: 100%;
     border-radius: 2px;
