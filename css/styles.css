@@ -25,7 +25,6 @@ body {
 .header-main-div {
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: var(--nav-border);
     justify-content: space-between;
     margin: auto;
     display: flex;
@@ -33,6 +32,7 @@ body {
 
 .header-class {
     padding: 32px 0px;
+    border-bottom: var(--nav-border);
 }
 
 .link {
