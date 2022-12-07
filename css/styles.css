@@ -542,15 +542,6 @@ figure {
     color: var(--logo-color);
 }
 
-@keyframes modal {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 .is-hidden {
     pointer-events: none;
     visibility: hidden;
@@ -565,7 +556,6 @@ figure {
     background-color: var(--second-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    animation: modal 1s 1s ease-in-out;
 }
 
 .bg-modal {
@@ -577,6 +567,7 @@ figure {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
+    transition-duration: 500ms;
 }
 
 .button-modal {
