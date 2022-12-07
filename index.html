@@ -15,36 +15,44 @@
 </head>
 
 <body>
-    <header class="header-class">
-        <div class="header-div-flex">
-            <a href=" index.html " class="logo"><span class="web">Web</span>Studio</a>
-
-            <nav class="top-menu">
-                <ul>
-                    <li><a href="index.html " class="link active"> Agencja</a></li>
-                    <li>
-                        <a href="portfolio.html " class="link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="# " class="link">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
+    <!--  modalne okienko -->
+    <div data-modal class="bg-modal is-hidden">
+        <div class="modal">
+            <button data-modal-close class="button-modal">X</button>
         </div>
-        <ul class="ul-address-nav">
-            <li>
-                <a href="mailto:info@devstudio.com " class="link contacts"><svg class="icon" width="16" height="12">
-                        <use href="images/icons.svg#message"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+48111111111 " class="link contacts"><svg class="icon" width="10" height="16">
-                        <use href="images/icons.svg#phone"></use>
-                    </svg>
-                    +48 111 111 111</a>
-            </li>
-        </ul>
+    </div>
+    <header class="header-class">
+        <div class="container header-main-div">
+            <div class="header-div-flex">
+                <a href=" index.html " class="logo"><span class="web">Web</span>Studio</a>
+
+                <nav class="top-menu">
+                    <ul>
+                        <li><a href="index.html " class="link active"> Agencja</a></li>
+                        <li>
+                            <a href="portfolio.html " class="link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="# " class="link">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="ul-address-nav">
+                <li>
+                    <a href="mailto:info@devstudio.com " class="link contacts"><svg class="icon" width="16" height="12">
+                            <use href="images/icons.svg#message"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li>
+                    <a href="tel:+48111111111 " class="link contacts"><svg class="icon" width="10" height="16">
+                            <use href="images/icons.svg#phone"></use>
+                        </svg>
+                        +48 111 111 111</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
 
@@ -369,12 +377,7 @@
             </div>
         </div>
     </footer>
-    <!--  modalne okienko -->
-    <div data-modal class="bg-modal is-hidden">
-        <div class="modal">
-            <button data-modal-close class="button-modal">X</button>
-        </div>
-    </div>
+
     <script src="./js/modal.js"></script>
 </body>
 
